@@ -10,7 +10,7 @@
 #include <vector>
 #include <stdlib.h>
 
-EXPORTDLL double PositionTracker(double motor_position, const char *file_path) {
+EXPORTDLL double PositionTracker(double motor_position, double initial_position, const char *file_path, int delay = 10) {
 
 	// *************************************************************
 	//  'file_path' is the path to the position log file. The 
@@ -21,12 +21,11 @@ EXPORTDLL double PositionTracker(double motor_position, const char *file_path) {
 	// *************************************************************
 	//  Read in file with position/frequency measurement data
 	// *************************************************************
+	if (motor_position == initial_position) return (motor_position);
 
 	std::fstream file;
 
-	std::vector <double> position;
-	
-	file.open(file_path, std::fstream::in | std::fstream::out);
+	file.open(file_path, std::fstream::in | std::fstream::out | std::fstream::trunc);
 	if (!file.is_open()) {
 		std::cerr << "File not opened." << std::endl;
 		exit(1);
@@ -40,7 +39,7 @@ EXPORTDLL double PositionTracker(double motor_position, const char *file_path) {
 	// *************************************************************
 	
 	file << motor_position;
-	Sleep(100);
+	Sleep(delay);
 	file.close();
 
 	return(motor_position);
