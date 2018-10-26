@@ -45,7 +45,7 @@ to re-render it.
 
 There is a git repository in this folder so that you can branch/do
 whatever with it; it is hosted remotely under
-`https://github.com/ptgroup/stepper-motor-controller`. When working
+`https://github.com/E1039-Collaboration/Slow-Controls/tree/master/Motor%20controller`. When working
 with the project, it is best to open the file `Motor
 controller.lvproj` and then do stuff, since some features (such as
 classes) are only supported within the LabVIEW project interface.
