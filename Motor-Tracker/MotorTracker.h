@@ -20,7 +20,7 @@ void swap(std::vector <double> &pos, std::vector <double> &freq, int i, int j) {
 	return;
 }
 
-EXPORTDLL double MotorTracker(double motor_position, const char *file_path) {
+EXPORTDLL double *MotorTracker(double motor_position, const char *file_path) {
 
 	// *************************************************************
 	//  'file_path' is the path to the map file that is used to 
@@ -86,6 +86,7 @@ EXPORTDLL double MotorTracker(double motor_position, const char *file_path) {
 	double intercept;
 	int lower;
 	int upper;
+	double fit[3];
 
 	for (int i = 0; i < position.size(); i++) {
 		if (position.at(i) > motor_position) {
@@ -98,7 +99,12 @@ EXPORTDLL double MotorTracker(double motor_position, const char *file_path) {
 	slope = ((frequency.at(upper) - frequency.at(lower)) / (position.at(upper) - position.at(lower)));
 	intercept = frequency.at(upper) - slope * position.at(upper);
 	double freq_out = slope * motor_position + intercept;
-
-	return(freq_out);
+	
+	fit[0] = freq_out;
+	fit[1] = slope;
+	fit[2] = intercept;
+	
+//	return(freq_out);
+	return(fit);
 }
 #endif
