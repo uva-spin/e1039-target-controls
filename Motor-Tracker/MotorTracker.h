@@ -44,9 +44,11 @@ EXPORTDLL double MotorTracker(double motor_position, double *fit, const char *fi
 
 	bool fNotSorted = true;
 
+	int lower = 0;
+	int upper = 1;
+
 	file.open(file_path, std::fstream::in | std::fstream::out);
 	if (!file.is_open()) {
-		std::cerr << "File not opened." << std::endl;
 		exit(1);
 	}
 	while (file.good()) {
@@ -69,8 +71,8 @@ EXPORTDLL double MotorTracker(double motor_position, double *fit, const char *fi
 
 	while (fNotSorted) {
 		fNotSorted = false;
-		for(unsigned int i = 0; i < (unsigned int)(position.size() - 1); i++){
-			if(position[i] > position[i + 1]){
+		for (unsigned int i = 0; i < (unsigned int)(position.size() - 1); i++) {
+			if (position[i] > position[i + 1]) {
 				swap(position, frequency, i, i + 1);
 				fNotSorted = true;
 			}
@@ -79,29 +81,32 @@ EXPORTDLL double MotorTracker(double motor_position, double *fit, const char *fi
 	file.close();
 
 	// *************************************************************
-	//  Find input positiona and extrapolate to determine frequency
+	//  Find input position and extrapolate to determine frequency
 	// *************************************************************
 
 	double slope;
 	double intercept;
-	int lower;
-	int upper;
 
-	for(unsigned int i = 0; i < (unsigned int)position.size(); i++){
-		if(position.at(i) > motor_position){
-			lower = i - 1;
-			upper = i;
-			break;
-		}
+	bool fOverRange = false;
+	if ((motor_position < position.front()) || (motor_position > position.back())) fOverRange = true;
+
+	if (!fOverRange){
+		for (unsigned int i = 0; i < (unsigned int)position.size(); i++) {
+			if (position.at(i) > motor_position) {
+				lower = i - 1;
+				upper = i;
+				break;
+			}	
+		}	
 	}
-
+		
 	slope = ((frequency.at(upper) - frequency.at(lower)) / (position.at(upper) - position.at(lower)));
 	intercept = frequency.at(upper) - slope * position.at(upper);
 	double freq_out = slope * motor_position + intercept;
 
 	fit[0] = slope;
 	fit[1] = intercept;
-
+	
 	return(freq_out);
 }
 #endif
