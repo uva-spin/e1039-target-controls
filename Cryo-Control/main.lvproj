@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="15008000">
+<Project Type="Project" LVVersion="19008000">
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -154,32 +154,32 @@
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 			</Item>
 			<Item Name="bypass.vi" Type="VI" URL="../bypass.vi"/>
-			<Item Name="Flow_Monitor.vi" Type="VI" URL="../Flow_Monitor.vi"/>
-			<Item Name="getinfo.vi" Type="VI" URL="../getinfo.vi"/>
-			<Item Name="getposition.vi" Type="VI" URL="../commands/getposition.vi"/>
-			<Item Name="Global 1.vi" Type="VI" URL="../Global 1.vi"/>
-			<Item Name="global_values.vi" Type="VI" URL="../global_values.vi"/>
-			<Item Name="He3ReadOut.vi" Type="VI" URL="../He3ReadOut.vi"/>
-			<Item Name="He3ReadOut_gpib.vi" Type="VI" URL="../He3ReadOut_gpib.vi"/>
-			<Item Name="init.vi" Type="VI" URL="../commands/init.vi"/>
+			<Item Name="Flow_Monitor.vi" Type="VI" URL="../subvi_main/Flow_Monitor.vi"/>
+			<Item Name="getinfo.vi" Type="VI" URL="../subvi_main/getinfo.vi"/>
+			<Item Name="getposition.vi" Type="VI" URL="../subvi_motor/getposition.vi"/>
+			<Item Name="Global 1.vi" Type="VI" URL="../subvi_main/Global 1.vi"/>
+			<Item Name="global_motor.vi" Type="VI" URL="../subvi_motor/global_motor.vi"/>
+			<Item Name="He3ReadOut.vi" Type="VI" URL="../subvi_main/He3ReadOut.vi"/>
+			<Item Name="He3ReadOut_gpib.vi" Type="VI" URL="../subvi_main/He3ReadOut_gpib.vi"/>
+			<Item Name="init.vi" Type="VI" URL="../subvi_motor/init.vi"/>
 			<Item Name="level_probe.vi" Type="VI" URL="../level_probe.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="MainFlow_Monitor.vi" Type="VI" URL="../MainFlow_Monitor.vi"/>
-			<Item Name="microstep_resolution.vi" Type="VI" URL="../commands/microstep_resolution.vi"/>
-			<Item Name="motor_disable.vi" Type="VI" URL="../commands/motor_disable.vi"/>
-			<Item Name="motor_enable.vi" Type="VI" URL="../commands/motor_enable.vi"/>
-			<Item Name="pr.vi" Type="VI" URL="../commands/pr.vi"/>
-			<Item Name="Pressure_Monitor.vi" Type="VI" URL="../Pressure_Monitor.vi"/>
-			<Item Name="Pressure_Monitor_bkfl.vi" Type="VI" URL="../Pressure_Monitor_bkfl.vi"/>
-			<Item Name="sanitize.vi" Type="VI" URL="../sanitize.vi"/>
-			<Item Name="sanitize_io.vi" Type="VI" URL="../sanitize_io.vi"/>
+			<Item Name="MainFlow_Monitor.vi" Type="VI" URL="../subvi_main/MainFlow_Monitor.vi"/>
+			<Item Name="microstep_resolution.vi" Type="VI" URL="../subvi_motor/microstep_resolution.vi"/>
+			<Item Name="motor_disable.vi" Type="VI" URL="../subvi_motor/motor_disable.vi"/>
+			<Item Name="motor_enable.vi" Type="VI" URL="../subvi_motor/motor_enable.vi"/>
+			<Item Name="pr.vi" Type="VI" URL="../subvi_motor/pr.vi"/>
+			<Item Name="Pressure_Monitor.vi" Type="VI" URL="../subvi_main/Pressure_Monitor.vi"/>
+			<Item Name="Pressure_Monitor_bkfl.vi" Type="VI" URL="../subvi_main/Pressure_Monitor_bkfl.vi"/>
+			<Item Name="sanitize.vi" Type="VI" URL="../subvi_motor/sanitize.vi"/>
+			<Item Name="sanitize_io.vi" Type="VI" URL="../subvi_motor/sanitize_io.vi"/>
 			<Item Name="Sep_Flow_Control.vi" Type="VI" URL="../Sep_Flow_Control.vi"/>
-			<Item Name="setpositionabsolute.vi" Type="VI" URL="../commands/setpositionabsolute.vi"/>
-			<Item Name="setvelocity.vi" Type="VI" URL="../commands/setvelocity.vi"/>
-			<Item Name="to_steps.vi" Type="VI" URL="../to_steps.vi"/>
-			<Item Name="to_turns.vi" Type="VI" URL="../to_turns.vi"/>
-			<Item Name="Vac_Pressure_Monitor.vi" Type="VI" URL="../Vac_Pressure_Monitor.vi"/>
-			<Item Name="writetofile.vi" Type="VI" URL="../writetofile.vi"/>
+			<Item Name="setpositionabsolute.vi" Type="VI" URL="../subvi_motor/setpositionabsolute.vi"/>
+			<Item Name="setvelocity.vi" Type="VI" URL="../subvi_motor/setvelocity.vi"/>
+			<Item Name="to_steps.vi" Type="VI" URL="../subvi_motor/to_steps.vi"/>
+			<Item Name="to_turns.vi" Type="VI" URL="../subvi_motor/to_turns.vi"/>
+			<Item Name="Vac_Pressure_Monitor.vi" Type="VI" URL="../subvi_main/Vac_Pressure_Monitor.vi"/>
+			<Item Name="writetofile.vi" Type="VI" URL="../subvi_main/writetofile.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="main" Type="EXE">

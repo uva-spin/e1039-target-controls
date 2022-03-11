@@ -1,0 +1,25 @@
+Message: 20Sep2021 12h39m17s
+Event Builder Started
+Message: 20Sep2021 12h39m18s
+Analysis Module Started
+Message: 20Sep2021 12h39m18s
+Logger Module Started
+Message: 20Sep2021 12h39m22s
+NMR Module Started
+Error: 20Sep2021 12h39m24s
+Error Setting RF parameters.
+Error: 20Sep2021 12h39m24s
+Error Setting Yale Gain.
+Error: 20Sep2021 12h39m25s
+Error Selecting QMeter.
+Error: 20Sep2021 12h39m25s
+Error turning off RF.
+Message: 20Sep2021 12h39m25s
+Microwave Module Started
+Message: 20Sep2021 12h39m25s
+Temperature Module Started
+Warning: 20Sep2021 12h39m25s
+Bad PDP Message:
+ChannelFile=B28_NMR_Setup.txt
+Message: 20Sep2021 12h39m25s
+Magnet Program Started
