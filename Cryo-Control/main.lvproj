@@ -11,6 +11,7 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
+		<Item Name="variable_reference.ctl" Type="VI" URL="../THCD_400/thcd_controls/variable_reference.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -154,6 +155,7 @@
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 			</Item>
 			<Item Name="bypass.vi" Type="VI" URL="../bypass.vi"/>
+			<Item Name="ctrl_chn_thcd.ctl" Type="VI" URL="../THCD_400/thcd_controls/ctrl_chn_thcd.ctl"/>
 			<Item Name="Flow_Monitor.vi" Type="VI" URL="../subvi_main/Flow_Monitor.vi"/>
 			<Item Name="getinfo.vi" Type="VI" URL="../subvi_main/getinfo.vi"/>
 			<Item Name="getposition.vi" Type="VI" URL="../subvi_motor/getposition.vi"/>
@@ -176,6 +178,10 @@
 			<Item Name="Sep_Flow_Control.vi" Type="VI" URL="../Sep_Flow_Control.vi"/>
 			<Item Name="setpositionabsolute.vi" Type="VI" URL="../subvi_motor/setpositionabsolute.vi"/>
 			<Item Name="setvelocity.vi" Type="VI" URL="../subvi_motor/setvelocity.vi"/>
+			<Item Name="thcd_400_main.vi" Type="VI" URL="../THCD_400/thcd_400_main.vi"/>
+			<Item Name="thcd_chan_all.vi" Type="VI" URL="../THCD_400/thcd_commands/thcd_chan_all.vi"/>
+			<Item Name="thcd_chan_stat.vi" Type="VI" URL="../THCD_400/thcd_commands/thcd_chan_stat.vi"/>
+			<Item Name="thcd_visa_init.vi" Type="VI" URL="../THCD_400/thcd_commands/thcd_visa_init.vi"/>
 			<Item Name="to_steps.vi" Type="VI" URL="../subvi_motor/to_steps.vi"/>
 			<Item Name="to_turns.vi" Type="VI" URL="../subvi_motor/to_turns.vi"/>
 			<Item Name="Vac_Pressure_Monitor.vi" Type="VI" URL="../subvi_main/Vac_Pressure_Monitor.vi"/>
