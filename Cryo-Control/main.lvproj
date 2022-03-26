@@ -10,9 +10,10 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Fridge_Valve" Type="Folder" URL="../Fridge_Valve">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-		<Item Name="measure_valve_position.vi" Type="VI" URL="../Fridge_Valve/sub/measure_valve_position.vi"/>
-		<Item Name="read_mcc_usb202.vi" Type="VI" URL="../Fridge_Valve/sub/read_mcc_usb202.vi"/>
 		<Item Name="variable_reference.ctl" Type="VI" URL="../THCD_400/thcd_controls/variable_reference.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -209,6 +210,7 @@
 				<Item Name="ULx Timing (Sample Clock).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Timing.llb/ULx Timing (Sample Clock).vi"/>
 				<Item Name="ULx Timing (Use Waveform).vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Timing.llb/ULx Timing (Use Waveform).vi"/>
 				<Item Name="ULx Timing.vi" Type="VI" URL="/&lt;vilib&gt;/ULx/Timing.llb/ULx Timing.vi"/>
+				<Item Name="ULx_LV.dll" Type="Document" URL="/&lt;vilib&gt;/ULx/ULx_LV.dll"/>
 				<Item Name="Validate Semaphore Size.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Validate Semaphore Size.vi"/>
 				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
 				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
@@ -244,7 +246,6 @@
 				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 			</Item>
-			<Item Name="bypass.vi" Type="VI" URL="../bypass.vi"/>
 			<Item Name="ctrl_chn_thcd.ctl" Type="VI" URL="../THCD_400/thcd_controls/ctrl_chn_thcd.ctl"/>
 			<Item Name="ctrl_dsp_thcd.ctl" Type="VI" URL="../THCD_400/thcd_controls/ctrl_dsp_thcd.ctl"/>
 			<Item Name="ctrl_flt_thcd.ctl" Type="VI" URL="../THCD_400/thcd_controls/ctrl_flt_thcd.ctl"/>
