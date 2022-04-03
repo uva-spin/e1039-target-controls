@@ -13,8 +13,10 @@
 		<Item Name="Fridge_Valve" Type="Folder" URL="../Fridge_Valve">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="THCD_400" Type="Folder" URL="../THCD_400">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-		<Item Name="variable_reference.ctl" Type="VI" URL="../THCD_400/thcd_controls/variable_reference.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -246,14 +248,6 @@
 				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 			</Item>
-			<Item Name="ctrl_chn_thcd.ctl" Type="VI" URL="../THCD_400/thcd_controls/ctrl_chn_thcd.ctl"/>
-			<Item Name="ctrl_dsp_thcd.ctl" Type="VI" URL="../THCD_400/thcd_controls/ctrl_dsp_thcd.ctl"/>
-			<Item Name="ctrl_flt_thcd.ctl" Type="VI" URL="../THCD_400/thcd_controls/ctrl_flt_thcd.ctl"/>
-			<Item Name="ctrl_gid_thcd.ctl" Type="VI" URL="../THCD_400/thcd_controls/ctrl_gid_thcd.ctl"/>
-			<Item Name="ctrl_rem_thcd.ctl" Type="VI" URL="../THCD_400/thcd_controls/ctrl_rem_thcd.ctl"/>
-			<Item Name="ctrl_sin_thcd.ctl" Type="VI" URL="../THCD_400/thcd_controls/ctrl_sin_thcd.ctl"/>
-			<Item Name="ctrl_sms_thcd.ctl" Type="VI" URL="../THCD_400/thcd_controls/ctrl_sms_thcd.ctl"/>
-			<Item Name="ctrl_uom_thcd.ctl" Type="VI" URL="../THCD_400/thcd_controls/ctrl_uom_thcd.ctl"/>
 			<Item Name="Flow_Monitor.vi" Type="VI" URL="../subvi_main/Flow_Monitor.vi"/>
 			<Item Name="getinfo.vi" Type="VI" URL="../subvi_main/getinfo.vi"/>
 			<Item Name="getposition.vi" Type="VI" URL="../subvi_motor/getposition.vi"/>
@@ -276,20 +270,10 @@
 			<Item Name="Sep_Flow_Control.vi" Type="VI" URL="../Sep_Flow_Control.vi"/>
 			<Item Name="setpositionabsolute.vi" Type="VI" URL="../subvi_motor/setpositionabsolute.vi"/>
 			<Item Name="setvelocity.vi" Type="VI" URL="../subvi_motor/setvelocity.vi"/>
-			<Item Name="thcd_400_main.vi" Type="VI" URL="../THCD_400/thcd_400_main.vi"/>
-			<Item Name="thcd_chan_all.vi" Type="VI" URL="../THCD_400/thcd_commands/thcd_chan_all.vi"/>
-			<Item Name="thcd_chan_stat.vi" Type="VI" URL="../THCD_400/thcd_commands/thcd_chan_stat.vi"/>
-			<Item Name="thcd_set_ahy.vi" Type="VI" URL="../THCD_400/thcd_commands/thcd_set_ahy.vi"/>
-			<Item Name="thcd_set_dsp.vi" Type="VI" URL="../THCD_400/thcd_commands/thcd_set_dsp.vi"/>
-			<Item Name="thcd_set_flt.vi" Type="VI" URL="../THCD_400/thcd_commands/thcd_set_flt.vi"/>
-			<Item Name="thcd_set_gid.vi" Type="VI" URL="../THCD_400/thcd_commands/thcd_set_gid.vi"/>
-			<Item Name="thcd_set_rem.vi" Type="VI" URL="../THCD_400/thcd_commands/thcd_set_rem.vi"/>
-			<Item Name="thcd_set_samp.vi" Type="VI" URL="../THCD_400/thcd_commands/thcd_set_samp.vi"/>
-			<Item Name="thcd_set_sin.vi" Type="VI" URL="../THCD_400/thcd_commands/thcd_set_sin.vi"/>
-			<Item Name="thcd_set_uom.vi" Type="VI" URL="../THCD_400/thcd_commands/thcd_set_uom.vi"/>
-			<Item Name="thcd_set_zrfs.vi" Type="VI" URL="../THCD_400/thcd_commands/thcd_set_zrfs.vi"/>
-			<Item Name="thcd_setters.vi" Type="VI" URL="../THCD_400/thcd_commands/thcd_setters.vi"/>
-			<Item Name="thcd_visa_init.vi" Type="VI" URL="../THCD_400/thcd_commands/thcd_visa_init.vi"/>
+			<Item Name="thcd_get_ahy.vi" Type="VI" URL="../THCD_400/thcd_get_ahy.vi"/>
+			<Item Name="thcd_get_sp.vi" Type="VI" URL="../THCD_400/thcd_get_sp.vi"/>
+			<Item Name="thcd_get_spa.vi" Type="VI" URL="../THCD_400/thcd_get_spa.vi"/>
+			<Item Name="thcd_get_uom.vi" Type="VI" URL="../THCD_400/thcd_get_uom.vi"/>
 			<Item Name="to_steps.vi" Type="VI" URL="../subvi_motor/to_steps.vi"/>
 			<Item Name="to_turns.vi" Type="VI" URL="../subvi_motor/to_turns.vi"/>
 			<Item Name="Vac_Pressure_Monitor.vi" Type="VI" URL="../subvi_main/Vac_Pressure_Monitor.vi"/>
