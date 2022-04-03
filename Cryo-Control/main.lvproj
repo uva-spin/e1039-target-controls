@@ -13,6 +13,9 @@
 		<Item Name="Fridge_Valve" Type="Folder" URL="../Fridge_Valve">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="MaxiGauge" Type="Folder" URL="../MaxiGauge">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="THCD_400" Type="Folder" URL="../THCD_400">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -262,6 +265,7 @@
 			<Item Name="microstep_resolution.vi" Type="VI" URL="../subvi_motor/microstep_resolution.vi"/>
 			<Item Name="motor_disable.vi" Type="VI" URL="../subvi_motor/motor_disable.vi"/>
 			<Item Name="motor_enable.vi" Type="VI" URL="../subvi_motor/motor_enable.vi"/>
+			<Item Name="pack_into_wf_array_MKS670_He3.vi" Type="VI" URL="../MKS670_He3/sub/pack_into_wf_array_MKS670_He3.vi"/>
 			<Item Name="pr.vi" Type="VI" URL="../subvi_motor/pr.vi"/>
 			<Item Name="Pressure_Monitor.vi" Type="VI" URL="../subvi_main/Pressure_Monitor.vi"/>
 			<Item Name="Pressure_Monitor_bkfl.vi" Type="VI" URL="../subvi_main/Pressure_Monitor_bkfl.vi"/>
