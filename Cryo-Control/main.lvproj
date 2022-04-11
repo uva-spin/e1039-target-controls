@@ -16,12 +16,16 @@
 		<Item Name="MaxiGauge" Type="Folder" URL="../MaxiGauge">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="MKS670_He3" Type="Folder" URL="../MKS670_He3">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="MKS946" Type="Folder" URL="../MKS946">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="THCD_400" Type="Folder" URL="../THCD_400">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="get_external_stop.vi" Type="VI" URL="../Common/get_external_stop.vi"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -211,14 +215,12 @@
 			<Item Name="Global 1.vi" Type="VI" URL="../subvi_main/Global 1.vi"/>
 			<Item Name="global_motor.vi" Type="VI" URL="../subvi_motor/global_motor.vi"/>
 			<Item Name="He3ReadOut.vi" Type="VI" URL="../subvi_main/He3ReadOut.vi"/>
-			<Item Name="He3ReadOut_gpib.vi" Type="VI" URL="../subvi_main/He3ReadOut_gpib.vi"/>
 			<Item Name="init.vi" Type="VI" URL="../subvi_motor/init.vi"/>
 			<Item Name="level_probe.vi" Type="VI" URL="../level_probe.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="microstep_resolution.vi" Type="VI" URL="../subvi_motor/microstep_resolution.vi"/>
 			<Item Name="motor_disable.vi" Type="VI" URL="../subvi_motor/motor_disable.vi"/>
 			<Item Name="motor_enable.vi" Type="VI" URL="../subvi_motor/motor_enable.vi"/>
-			<Item Name="pack_into_wf_array_MKS670_He3.vi" Type="VI" URL="../MKS670_He3/sub/pack_into_wf_array_MKS670_He3.vi"/>
 			<Item Name="pr.vi" Type="VI" URL="../subvi_motor/pr.vi"/>
 			<Item Name="sanitize.vi" Type="VI" URL="../subvi_motor/sanitize.vi"/>
 			<Item Name="sanitize_io.vi" Type="VI" URL="../subvi_motor/sanitize_io.vi"/>
