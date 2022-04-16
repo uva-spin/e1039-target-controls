@@ -10,6 +10,12 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="BGA244" Type="Folder" URL="../BGA244">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
+		<Item Name="Common" Type="Folder" URL="../Common">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Fridge_Valve" Type="Folder" URL="../Fridge_Valve">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -25,7 +31,6 @@
 		<Item Name="THCD_400" Type="Folder" URL="../THCD_400">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="get_external_stop.vi" Type="VI" URL="../Common/get_external_stop.vi"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
