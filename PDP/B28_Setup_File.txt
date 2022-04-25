@@ -16,7 +16,7 @@ Post Processors="OLA,TCL,PDP"
 
 [TCL]
 Path=TCL-Target_Computer_Logging
-Event File=z:\b28\events\events.csv
+Event File=C:\uva-spin\e1039-target-controls\PDP\events.csv
 Fragments=EventNum,Polarization,Area,CalConst,Baseline,QMeterNum,QMeterName,MagCurrent,EIPFreq,HPFreq,uWaveFreq,uWavePower,FMAmplitude,FMOffset,ScanSweeps,ScanSteps,ScanFreq,RFFreq,RFMod,RFPower,YaleGain,DCLevel,He3Press,He3Temp,He4Temp,He4Press,SepFlow,MainFlow,MagLevel,RFVolts,LN2Level,VacPress,Comment,TopChip,BottomChip,CarbonGlass,Collector
 Signals=RawSignal,PolySignal
 Primary Key=EventNum
