@@ -1,6 +1,6 @@
 # Magnet-PS-Control
 
-VIs to control the E1039 target magnet PS.
+VIs to control the target magnet PS.
 
 ## Device Info
 
@@ -12,10 +12,10 @@ VIs to control the E1039 target magnet PS.
 ## Prerequisite
 
 * Mercury iXX: VIs for Magnet PS
-    - Included in this repository.  No record where it was obtained.
+    - Included in this repository.  No record about where it was obtained.
 * FTDI D2XX and VCP drivers: DLL for shim relay
     - https://ftdichip.com/drivers/d2xx-drivers/
-    - Installed in the OS system.  
+    - Installed in the system-level folder.  No record about where/when it was installed.
 * FTDI D2XX function library: VIs for shim relay
     - https://www.ftdichip.com/old2020/Support/SoftwareExamples/CodeExamples/LabVIEW.htm
     - The original library is for the 32-bit environment.
@@ -37,7 +37,7 @@ It can be used as follows:
 1. Close the manager
 1. Open `e1039_Magnet_PS_Control.vi` and run it.
 
-This procedure includes multiple steps, and thus is difficult to be automated:
+This procedure includes multiple steps, and thus is difficult to be automated, where
 * The manager communicates with the first-found FTDI-chip interface, no matter if it is the shim relay.  Thus all other FTDI-chip interfaces must be disconnected.
 * The manager changes a communication mode.  Thus it must be opened once.
 
